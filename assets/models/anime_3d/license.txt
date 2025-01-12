@@ -1,0 +1,11 @@
+Model Information:
+* title:	Grög the Adventurer
+* source:	https://sketchfab.com/3d-models/grog-the-adventurer-6851846538614cb7a1cb1178ed7b46d4
+* author:	kaimueri (https://sketchfab.com/kaimueri)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Grög the Adventurer" (https://sketchfab.com/3d-models/grog-the-adventurer-6851846538614cb7a1cb1178ed7b46d4) by kaimueri (https://sketchfab.com/kaimueri) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

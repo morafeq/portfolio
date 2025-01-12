@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--========== UNICONS ==========-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!--========== BOXICONS ==========-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--========== SWIPER CSS ==========-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--========== MAIN CSS ==========-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <title>My Portfolio</title>
+  </head>
+
+  <body>
+    <!--========== SIDEBAR ==========-->
+    <div class="nav__toggle" id="nav-toggle">
+      <i class="uil uil-bars"></i>
+    </div>
+    <aside class="sidebar" id="sidebar">
+      <nav class="nav">
+        <div class="nav__logo">
+          <a href="index.html" class="nav__logo-text">M</a>
+        </div>
+
+        <div class="nav__menu">
+          <div class="menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link active-link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#services" class="nav__link">Services</a>
+              </li>
+              <li class="nav__item">
+                <a href="#work" class="nav__link">Work</a>
+              </li>
+              <li class="nav__item">
+                <a href="#skills" class="nav__link">Skills</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="btn__share">
+          <a href="my_cv.pdf" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-file-pdf"></i>
+          </a>
+      </div>
+
+        <div class="nav__close" id="nav-close">
+          <i class="uil uil-times"></i>
+        </div>
+      </nav>
+    </aside>
+
+    <!--========== MAIN ==========-->
+    <main class="main">
+      <!--<div class="anime">
+        <model-viewer
+          id="threedd"
+          src="./assets/models/bird"
+          autoplay
+          camera-controls
+          disable-zoom
+          auto-rotate
+          shadow-intensity="1"
+        ></model-viewer>
+      </div>-->
+
+      <!--===== Home =====-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <div class="home__social">
+            <span class="home__social-follow">Follow Me</span>
+            <div class="home__social-links">
+              <a
+                href="https://www.getlab.com/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="uil uil-gitlab"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="uil uil-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="uil uil-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <img src="assets/img/home-bg.png" alt="" class="home__img" />
+
+          <div class="home__data">
+            <h1 class="home__title">Hi, I'm Mohammed</h1>
+            <h3 class="home__subtitle">
+              <span id="dynamic-skill" class="typing-effect"></span>
+            </h3>
+            <p class="home__description">
+              Solid understanding of web development and design, with hands-on
+              experience in delivering quality projects.
+            </p>
+            <a href="#work" class="button">
+              <i class="uil uil-user button__icon"></i>
+              Check out My work
+            </a>
+          </div>
+
+          <div class="my__info">
+            <!-- Location -->
+            <div class="info__item">
+              <i class="uil uil-map-marker info__icon"></i>
+
+              <div>
+                <h3 class="info__title">Location</h3>
+                <span class="info__subtitle">Eindhoven</span>
+              </div>
+            </div>
+
+            <!-- Phone number -->
+            <div class="info__item">
+              <i class="uil uil-phone info__icon"></i>
+
+              <div>
+                <h3 class="info__title">Phone Number</h3>
+                <span class="info__subtitle">+31-6875-62-519</span>
+              </div>
+            </div>
+
+            <div class="info__item">
+              <i class="uil uil-envelope-edit info__icon"></i>
+
+              <div>
+                <h3 class="info__title">Email</h3>
+                <span class="info__subtitle">r.rafeq@student.fontys.nl</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== Work =====-->
+      <section class="work section" id="work">
+        <h2 data-heading="My Portfolio" class="section__title">Recent Works</h2>
+
+        <div class="work__filters">
+          <span class="work__item active-work" data-filter="all">All</span>
+          <span class="work__item" data-filter=".web">Web</span>
+          <span class="work__item" data-filter=".app">App</span>
+          <span class="work__item" data-filter=".design">Design</span>
+        </div>
+
+        <div class="work__container container grid">
+          <div class="work__card mix web">
+            <img src="assets/img/pixel_home.png" alt="" class="work__img" />
+            <h3 class="work__title">Pixel Playground</h3>
+
+            <span class="work__button"></span>
+              <a href="#popup-pixel-playground" class="open_btn">Read more</a>
+              <i class="uil uil-arrow-right work__button-icon" style="color: var(--skin-color);"></i>              
+            </span>
+            
+            <div id="popup-pixel-playground" class="popup">
+              <div class="popup__block">
+                <div class="hero-image">
+                  <div class="hero-text">
+                    <h1 style="font-size:50px">Pixel Playground</h1>
+                  </div>
+                </div>
+                <p>
+                  A collaborative project to design and develop a gamified educational website that enhances student engagement through user-centered design and interactive features.
+                </p>
+                <br>
+                <h2>Key Skills & Tools</h2>
+                <hr class="new1">
+                <p><strong>Skills:</strong> User Research, Interaction Design, Prototyping, Usability Testing, Information Architecture</p>
+                <p><strong>Tools:</strong> Figma, Empathy Maps, Customer Journey Mapping, Sketching</p>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript, MongoDB</p>
+                <br>
+                <img src="assets/img/persona.png" class="secondimage" alt="The foto of nature" />
+                <img src="assets/img/mosco.png" class="secondimage" alt="The foto of nature" />
+
+                <br>
+                <br>
+                <br>
+                
+                <h2>Highlights</h2>
+                <hr class="new1">
+                <br>
+                <ul class="b">
+                    <li>Developed a responsive, user-friendly website with intuitive navigation and dynamic content</li>
+                    <li>Conducted interviews and surveys to guide design</li>
+                    <li>Built an admin backend for tutorial management using MongoDB</li>
+                    <li>Refined design iteratively using user and stakeholder feedback</li>
+                </ul>
+                <br>
+                <img src="assets/img/pixel_popup.png" class="secondimage" alt="The foto of nature" />
+
+                <br>
+                <br>
+                <br>
+
+                
+                <h2>Achievements</h2>
+                <hr class="new1">
+                <br>
+                <ul class="b">
+                    <li>Integrated user feedback for improvements</li>
+                    <li>Enhanced readability with a black-and-white color scheme</li>
+                    <li>Applied user control principles</li>
+                    <li>Designed a homepage showcasing recommended tutorials</li>
+                </ul>
+                <br>
+                <img src="assets/img/work-1.png" class="secondimage" alt="The foto of nature" />
+                <p>
+                  This project was a comprehensive learning experience, significantly contributing to my growth as a professional. Each phase presented unique challenges and learnings, molding me into a skilled, empathetic, and strategic designer. Equipped with these experiences, I am now more prepared than ever to tackle future projects, especially those focusing on community engagement and user-centric solutions.
+                </p>
+                <div class="figma_btn">
+                  <a href="https://www.figma.com/design/EU86bDQodhuUP2pOTfSwab/Prototype-iteration?node-id=0-1&t=BLKJTPKmZydBMAwV-1" 
+                     class="figma-button" target="_blank" rel="noopener noreferrer">
+                    View Design on Figma
+                  </a>
+                </div>
+                
+                <a href="#" class="popup__close"></a>
+                
+              </div>
+            </div>
+          </div>
+
+          <!--second P-->
+          <div class="work__card mix web">
+            <img src="assets/img/home_icon_ct.png" alt="" class="work__img" />
+            <h3 class="work__title"> CTOUCH Displays</h3>
+            <span class="work__button"></span>
+              <a href="#popup-ctouch" class="open_btn">Read More</a>
+              <i class="uil uil-arrow-right work__button-icon" style="color: var(--skin-color);"></i>              
+            </span>
+            
+            <div id="popup-ctouch" class="popup">
+              <div class="popup__block">
+                <div class="hero-image">
+                  <div class="hero-text">
+                    <h1 style="font-size:50px">Seamless AI Support for CTOUCH Displays</h1>
+                  </div>
+                </div>
+                <p>
+                  Designing a non-intrusive AI assistant for CTOUCH displays to enhance user interaction with intuitive, seamless support.
+                </p>
+                <br>
+                <h2>About CTOUCH</h2>
+                <hr class="new1">
+                <p>CTOUCH is a forward-thinking company dedicated to creating dynamic, large-format touch displays. Their mission is to enhance interactivity, productivity, and engagement in both classrooms and business environments by leveraging the potential of touch technology. The company stands out for its innovative vision and user-centric approach to collaboration, offering tailored solutions that elevate the touch experience.</p>
+                <br>
+                <img src="assets/img/c-touch.png" class="secondimage" alt="The foto of nature" />
+                <br>
+                <br>
+                <br>
+                
+                <h2>Design Challenge</h2>
+                <hr class="new1">
+                <br>
+                <h3>Problem Statement:</h3>
+                <p>Current support tools often feel either intrusive (like Clippy from Windows) or embarrassing when users require assistance in a public setting, such as standing in front of a class or during a meeting. The challenge is to design an AI assistant that seamlessly integrates into the existing support tool, offering intuitive help without disrupting the flow of interaction.</p>
+                <br>
+                <h3>Objective:</h3>
+                <p>Create an AI assistant that:</p>
+                <ul class="b">
+                    <li>Feels like a natural, human-like assistant, not a robotic tool.</li>
+                    <li>Enhances user friendliness by providing non-intrusive, context-aware support.</li>
+                    <li>Works across multiple use cases, such as teaching, presentations, and meetings.</li>
+                </ul>
+                <br>
+                <img src="assets/img/ai.png" class="secondimage" alt="The foto of nature" />
+
+                <br>
+                <br>
+                <br>
+                
+                <h2>Methodology</h2>
+                <hr class="new1">
+                <br>
+                <h3>Phase 1: Research</h3>
+                <ul class="b">
+                    <li>User Interviews: Conduct interviews with target users, including teachers, students, and business professionals, to understand their needs, frustrations, and preferences.</li>
+                    <li>AI Capabilities Research: Study the current state of AI in interaction design to understand available functionalities and limitations.</li>
+                    <li>Competitive Analysis: Analyze existing touchscreen displays with built-in AI support to identify gaps and opportunities for differentiation.</li>
+                </ul>
+                <br>
+                <img src="assets/img/podcast.png" class="secondimage" alt="The foto of nature" />
+                <br>
+                <h3>Phase 2: Ideation</h3>
+                <br>
+                <h4>MOSCoW Prioritization:</h4>
+                <ul class="b">
+                  <li>Must-have: Key functionalities essential for a usable AI assistant</li>
+                  <li>Could-have: Optional features that can further improve engagement.</li>
+                  <li>Won’t-have: Features that are out of scope for this project phase.</li>
+                </ul>
+                <img src="assets/img/mosco.jpg" class="secondimage" alt="The foto of nature" />
+                
+                <h4>Sketching Concepts:</h4>
+                <p>
+                  Develop initial design ideas through sketches, focusing on user-friendly interactions and intuitive AI responses.
+                </p>
+                <img src="assets/img/sketch.png" class="secondimage" alt="The foto of nature" />
+                <br>
+                <h3>Phase 3: Prototyping</h3>
+                <br>
+                <h4>Figma Prototypes:</h4>
+                <p>Build high-fidelity prototypes in Figma to visualize the AI assistant’s interface and behavior.</p>
+                <img src="assets/img/home_icon_ct.png" class="secondimage" alt="The foto of nature" />
+                <br>
+                <h4>User Testing:</h4>
+                <p>Conduct usability tests with real users to gather feedback and iterate on the design.</p>
+                <br>
+                <h2> Why This Project is Valuable for CTOUCH?</h2>
+                <hr class="new1">
+                <p>This project aligns perfectly with CTOUCH’s mission to boost interactivity and engagement through cutting-edge technology. By incorporating an AI assistant that feels human and helpful rather than robotic or intrusive, CTOUCH can offer an even more seamless and delightful user experience, setting their product apart in a competitive market.</p>
+          
+                <div class="figma_btn">
+                  <a href="https://www.figma.com/design/EU86bDQodhuUP2pOTfSwab/Prototype-iteration?node-id=0-1&t=BLKJTPKmZydBMAwV-1" 
+                     class="figma-button" target="_blank" rel="noopener noreferrer">
+                    View Design on Figma
+                  </a>
+                </div>
+                <a href="#" class="popup__close"></a>
+                
+              </div>
+            </div>
+          </div>
+
+          <!--3d P-->
+          <div class="work__card mix app">
+            <img src="assets/img/off_home_icon.png" alt="" class="work__img" />
+            <h3 class="work__title">OFF App</h3>
+            <span class="work__button"></span>
+              <a href="#popup-off" class="open_btn">Read More</a>
+              <i class="uil uil-arrow-right work__button-icon" style="color: var(--skin-color);"></i>              
+            </span>
+            
+            <div id="popup-off" class="popup">
+              <div class="popup__block">
+                <div class="hero-image">
+                  <div class="hero-text">
+                    <h1 style="font-size:50px"> A User-Centered App for Managing Sensory Overload</h1>
+                  </div>
+                </div>
+                <p>
+                 OFF is a smart mobile app designed to help users manage sensory overload through personalized calming features, intuitive navigation, and seamless interaction. Developed using an iterative, user-centered approach, the app ensures a smooth and stress-free experience tailored to individual needs.
+                </p>
+                <br>
+                <h2>Objective:</h2>
+                <hr class="new1">
+                <p>Develop a smart mobile app that helps users manage sensory overload by providing calming, personalized support through an intuitive and user-friendly design.</p>
+            
+                <br>
+                <img src="assets/img/off_home_icon.png" class="secondimage" alt="The foto of nature" />
+               
+
+                <br>
+                <br>
+                <br>
+                
+                <h2>Key Features of the App:</h2>
+                <hr class="new1">
+                <br>
+                <ul class="b">
+                    <li>Personalized Calming Audio: <br>
+                      Users can select and customize calming audio tracks based on their preferences to help reduce sensory overload in real time.
+                    </li>
+                    <li>Planning & Checklist: <br>
+                      Users can create personalized daily plans with reminders for important tasks, while the checklist feature allows them to write down what they need to take with them or note essential items for each plan, helping them stay organized and prepared.
+                    </li>
+                    <img src="assets/img/plan_today.png" class="secondimage" alt="The foto of nature" />
+                    <li>Progress Tracking Diagram: <br>
+                      Visual progress tracking helps users become aware of their achievements over time. The diagram shows completed tasks, frequency of sensory overload, and coping success, empowering users with insights into their improvement.
+                    </li>
+                    <img src="assets/img/tracking.png" class="secondimage" alt="The foto of nature" />
+                    <li>Interactive Home Screen: <br>
+                      Displays real-time weather updates and personalized plans for the day, ensuring a calming and organized user experience.
+                    </li>
+                    <li>Seamless Navigation: <br>
+                      Implemented a bottom navigation bar for easy access to core features, enhancing usability and reducing cognitive load.
+                    </li>
+                    <li>User Profile & Account Management: <br>
+                      Secure login and account creation features ensure user data privacy while allowing personalized experiences.
+                    </li>
+                    <img src="assets/img/profile.png" class="secondimage" alt="The foto of nature" />
+                </ul>
+                <br>
+                
+
+                <br>
+                
+              
+                <h2>Key Deliverables</h2>
+                <hr class="new1">
+                <br>
+                <h3>Problem Analysis:</h3>
+                <ul class="b">
+                    <li>Used the DOT-framework to define key user needs and market trends.</li>
+                    <li>Ideated and refined mobile concepts through structured feedback and testing.</li>
+                </ul>
+                <h3>Design Execution:</h3>
+                <ul class="b">
+                    <li>Created key screens (Login, Create Account, Home, New Plan) with intuitive navigation and consistent styling.</li>
+                    <li>Redesigned elements based on usability feedback to improve user interaction and clarity.</li>
+                </ul>
+                <h3>Development & Realization:</h3>
+                <ul class="b">
+                    <li>Developed core app functionalities using Flutter, ensuring secure authentication and smooth performance.</li>
+                    <li>Integrated backend services and hardware sensors for enhanced functionality.</li>
+                </ul>
+                <h3>Advisory Contributions:</h3>
+                <ul class="b">
+                    <li>Recommended design enhancements (e.g., bottom navigation bar) based on user testing and cognitive walkthroughs.</li>
+                    <li>Provided actionable advice on improving navigation and overall user experience.</li>
+                </ul>
+                <h3>Project Management:</h3>
+                <ul class="b">
+                    <li>Maintained effective communication with stakeholders through Slack and Jira.</li>
+                    <li>Ensured project alignment and timely completion using industry-standard management techniques.</li>
+                </ul>
+                <br>
+                
+                <h2>Core Skills Demonstrated:</h2>
+                <hr class="new1">
+                <ul class="b">
+                  <li>User-Centered Design & Usability Testing</li>
+                  <li>UI/UX Prototyping & Iterative Development</li>
+                  <li>Mobile Development (Flutter, Kotlin)</li>
+                  <li>Stakeholder Communication & Project Management</li>
+                </ul>
+                <br>
+                <h2>Impact:</h2>
+                <hr class="new1">
+                <p>
+                  The app delivers a personalized, user-friendly solution for individuals managing sensory overload, with features designed to minimize stress through thoughtful interaction design. Rigorous usability testing ensured an intuitive experience that meets real-world needs.
+                </p>
+                <div class="figma_btn">
+                  <a href="https://www.figma.com/design/MxIjcpuEGOVHNoTNXMyNQW/OFF?node-id=533-2124&t=an4CwIrUySYIZHVn-1" 
+                     class="figma-button" target="_blank" rel="noopener noreferrer">
+                    View Design on Figma
+                  </a>
+                </div>
+                <a href="#" class="popup__close"></a>
+                
+              </div>
+            </div>
+          </div>
+
+          <!--4th P-->
+          <div class="work__card mix app">
+            <img src="assets/img/home_tree_1.png" alt="" class="work__img" />
+            <h3 class="work__title">Tree-Planting App</h3>
+            <span class="work__button"></span>
+              <a href="#popup-planting_tree" class="open_btn">Read More</a>
+              <i class="uil uil-arrow-right work__button-icon" style="color: var(--skin-color);"></i>              
+            </span>
+            
+            <div id="popup-planting_tree" class="popup">
+              <div class="popup__block">
+                <div class="hero-image">
+                  <div class="hero-text">
+                    <h1 style="font-size:50px"> Tree-Planting App: Empowering Environmental Action</h1>
+                  </div>
+                </div>
+                <p>
+                  Planting trees is important for the environment, but it can be hard to keep track of progress and share it with others. This app makes it simple for users to monitor their tree-planting efforts, connect with a community, and encourage more people to join in making a greener world.
+                </p>
+                <br>
+                <h2>Objective:</h2>
+                <hr class="new1">
+                <p>Develop a mobile app that enables users to track their tree-planting activities, share progress with a community, and encourage participation in environmental conservation initiatives.</p>
+            
+                <br>
+                <img src="assets/img/home_tree_1.png"class="secondimage" alt="The foto of nature" />
+               
+
+                <br>
+                <br>
+                <br>
+                
+                <h2>Key Features of the App:</h2>
+                <hr class="new1">
+                <br>
+                <h3>Home Screen:</h3>
+                <ul class="b">
+                    <li>Welcomes users and provides easy navigation to core features.</li>
+                    <li>Displays personalized updates on user activity and overall community progress.</li>
+                </ul>
+                <h3> Profile Screen::</h3>
+                <ul class="b">
+                    <li>Users can add plants and track each tree’s growth journey.</li>
+                    <li>Allows for detailed plant logging, including species and planting date.</li>
+
+                </ul>
+                <h3> Search Screen:</h3>
+                <ul class="b">
+                    <li>Keyword Search: Users can type keywords to explore an extensive plant library.</li>
+                    <li>Scan Feature: Instantly retrieves plant information by scanning real plants, improving user engagement.</li>
+                    <img src="assets/img/search_tree.png"class="secondimage" alt="The foto of nature" />
+                </ul>
+                <h3> Mapping Screen:</h3>
+                <ul class="b">
+                    <li>Interactive map showing planted trees in the user's vicinity.</li>
+                    <li>Users can track their own trees' growth on the map.</li>
+                    <li>Encourages community interaction by allowing users to: <br>
+                      Share advice. <br>
+                      Send and respond to help requests. <br>
+                      View nearby users’ contributions.</li>
+                      <img src="assets/img/tree_mapping.png"class="secondimage" alt="The foto of nature" />
+                </ul>
+                <br>
+            
+                <br>
+                
+                <h2>Methodology:</h2>
+                <hr class="new1">
+                <br>
+                <h3>DOT Framework:</h3>
+                <ul class="b">
+                    <li>Applied to structure problem analysis and define the app’s core functionality.</li>
+                    <li>Ensured alignment with user needs and stakeholder interests.</li>
+                </ul>
+                <h3>CMD Methods:</h3>
+                <ul class="b">
+                    <li>Cognitive Walkthrough: Used to identify potential usability issues early in the design process.</li>
+                    <li>Heuristic Evaluation: Ensured adherence to usability principles and improved overall user experience.</li>
+                    <li>Think-Aloud Protocol: Conducted usability tests by observing users interacting with early prototypes, gathering valuable feedback for iterative improvements.</li>
+                </ul>
+                <br>
+                
+                <h2>Core Skills Demonstrated:</h2>
+                <hr class="new1">
+                <ul class="b">
+                  <li>Problem Analysis & Stakeholder Engagement</li>
+                  <li>UI/UX Design & Prototyping</li>
+                  <li>User-Centered Design (UCD) & Usability Testing</li>
+                  <li>Iterative Product Development</li>
+                  <li>Community-Driven Features & Interaction Design</li>
+                </ul>
+                <br>
+                <h2>Impact:</h2>
+                <hr class="new1">
+                <p>
+                  This app makes it easier for people to keep track of their tree-planting progress, connect with others who care about the environment, and inspire more people to plant trees. It helps users stay motivated by showing how their efforts are making a difference and by building a supportive community where they can learn and share ideas.
+                </p>
+                
+                <a href="#" class="popup__close"></a>
+                
+              </div>
+            </div>
+          </div>
+
+          <!--5th P-->
+          <div class="work__card mix design">
+            <img src="assets/img/main_blender.png" alt="" class="work__img" />
+            <h3 class="work__title">3D Modeling</h3>
+            <span class="work__button"></span>
+              <a href="#popup-project_blender" class="open_btn">Read More</a>
+              <i class="uil uil-arrow-right work__button-icon" style="color: var(--skin-color);"></i>              
+            </span>
+            
+            <div id="popup-project_blender" class="popup">
+              <div class="popup__block">
+                <div class="hero-image">
+                  <div class="hero-text">
+                    <h1 style="font-size:50px">3D Modeling Portfolio: From Architectural Visualization to Character Design</h1>
+                  </div>
+                </div>
+                <p>
+                  In the evolving landscape of 3D modeling and visualization, the ability to navigate between different styles and requirements is crucial. This portfolio showcases two distinct projects that demonstrate versatility in 3D modeling, from grand architectural visualization to detailed character design. Each project presented unique challenges and learning opportunities, contributing to a comprehensive skill set in 3D artistry.
+                </p>
+                <br>
+                <h2>Project 1: Wallace's Archive - Blade Runner 2049 Recreation</h2>
+                <br>
+                <p>Inspired by the iconic science fiction film Blade Runner 2049, this project challenged the boundaries between architectural visualization and cinematic atmosphere. The recreation of Wallace's Archive demanded not just technical precision in modeling, but an understanding of how architecture and lighting work together to create mood and atmosphere.</p>
+                <h2>The development process included:</h2>
+                <hr class="new1">
+                <ul class="b">
+                  <li>Detailed architectural modeling with precise attention to structural elements</li>
+                  <li>Complex material creation and shading to capture the unique aesthetic</li>
+                  <li>Strategic lighting setup to recreate the film's distinctive atmosphere</li>
+                  <li>High-resolution rendering with emphasis on reflective surfaces and shadows</li>
+                </ul>
+                <br>
+                <img src="assets/img/blender_1.png" class="secondimage" alt="The foto of nature" />
+                <img src="assets/img/blender_2.png" class="secondimage" alt="The foto of nature" />
+                <br>
+                <p>The final result captures the imposing grandeur of the original scene while demonstrating advanced skills in architectural visualization and cinematic lighting.</p>
+                <br>
+                <br>
+                <br>
+                
+                <h2>Project 2: Interactive Rubber Duck - Character Modeling</h2>
+                <br>
+                <p>This project explored the nuances of character modeling through the creation of a seemingly simple but technically challenging rubber duck model. The goal was to create a high-quality asset that could seamlessly integrate into Unity, requiring careful attention to optimization and detail.</p>
+                <h2>The development process included:</h2>
+                <hr class="new1">
+                <ul class="b">
+                  <li> Precise modeling and sculpting of organic shapes</li>
+                  <li>Strategic UV layout for efficient texturing</li>
+                  <li>Custom texture creation for characteristic rubber material</li>
+                  <li>Rigorous model cleanup and optimization for game engine compatibility</li>
+                </ul>
+                <br>
+                <img src="assets/img/duck_blender.png" class="secondimage" alt="The foto of nature" />
+                <img src="assets/img/blender_3.png" class="secondimage" alt="The foto of nature" />
+                <br>
+                <p>Despite its playful appearance, this project demanded sophisticated technical skills and a methodical approach to 3D modeling and asset preparation.</p>
+                <br>
+                <br>
+                <div class="figma_btn">
+                  <a href="https://www.figma.com/design/MxIjcpuEGOVHNoTNXMyNQW/OFF?node-id=533-2124&t=an4CwIrUySYIZHVn-1" 
+                     class="figma-button" target="_blank" rel="noopener noreferrer">
+                    View Design on Figma
+                  </a>
+                </div>
+                <a href="#" class="popup__close"></a>
+                
+              </div>
+            </div>
+          </div>
+
+          <!--six P-->
+          <div class="work__card mix design">
+            <img src="assets/img/poster_home.png" alt="" class="work__img" />
+            <h3 class="work__title">Poster Design</h3>
+            <span class="work__button"></span>
+              <a href="#popup-career-day" class="open_btn">Read More</a>
+              <i class="uil uil-arrow-right work__button-icon" style="color: var(--skin-color);"></i>              
+            </span>
+            
+            <div id="popup-career-day" class="popup">
+              <div class="popup__block">
+                <div class="hero-image">
+                  <div class="hero-text">
+                    <h1 style="font-size:50px">Career Day Poster</h1>
+                  </div>
+                </div>
+                <p>
+                  Assigned with the task of creating an eye-catching poster, I began my creative exploration by searching for appealing ideas online. During this quest, a fortuitous realization dawned upon me – Career Day was just around the corner on November 16th. Recognizing this opportune moment, I decided to seize the chance and craft a poster dedicated to Career Day, infusing it with elements that resonate with the essence of this special occasion.
+                </p>
+                <br>
+                <h2>Key Skills & Tools</h2>
+                <hr class="new1">
+                <p><strong>Technologies:</strong>Canva</p>
+
+                <br>
+                <br>
+                <br>
+                
+                <h2>🎨 Design Elements and Choices:</h2>
+                <hr class="new1">
+                <br>
+                <ul class="b">
+                    <li>Background Selection:
+                        Opting for a black background, I aimed to create a backdrop that conveys a sense of sophistication and professionalism. The deep black serves as a canvas to enhance the overall visual appeal of the poster while maintaining a business-like atmosphere.</li>
+                    <li>Central Imagery:
+                        To symbolize the diversity and possibilities within different career paths, I chose domr different colors to give it more attention These colors align perfectly with the theme of Career Day, emphasizing networking and professional connections.</li>
+                    <li>Typography Choices:
+                      For the Career Day poster, I used "Anton" for the main font to convey energy and excitement, "Dig Shoulders Display" for the date to create a bold, distinctive look, and a separate footer font to balance the design and ensure visual harmony.</li>
+                    <li>Data Placement:
+                      Placing the essential information about Career Day at the top ensures that crucial details are immediately visible to the audience. This includes the date, which is highlighted using the chosen font style for emphasis.</li>
+                    <li>Color Harmony:
+                      The dark black background complements the Anton fonts, creating a harmonious color scheme. The contrast between the background and the vibrant fonts enhances readability and visual impact.
+                    </li>
+                    <li>Thoughtful Footer:
+                      The footer, designed with a separate font, serves as a finishing touch, providing additional information or a call to action.
+                    </li>
+                </ul>
+                <br>
+                <img src="assets/img/poster_popup.png" class="secondimage" alt="The foto of nature" />
+
+                <br>
+                <br>
+                <br>
+
+                <p>
+                  This project was a comprehensive learning experience, significantly contributing to my growth as a professional. Each phase presented unique challenges and learnings, molding me into a skilled, empathetic, and strategic designer. Equipped with these experiences, I am now more prepared than ever to tackle future projects, especially those focusing on community engagement and user-centric solutions.
+                </p>
+                <div class="figma_btn">
+                  <a href="https://www.figma.com/design/MxIjcpuEGOVHNoTNXMyNQW/OFF?node-id=533-2124&t=an4CwIrUySYIZHVn-1" 
+                     class="figma-button" target="_blank" rel="noopener noreferrer">
+                    View Design on Figma
+                  </a>
+                </div>
+                <a href="#" class="popup__close"></a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== About =====-->
+      <section class="about section" id="about">
+        <h2 data-heading="My Intro" class="section__title">About Me</h2>
+
+        <div class="about__container container grid">
+          <img src="assets/img/about-img.png" alt="" class="about__img" />
+
+          <div class="about__data">
+            <h3 class="about__heading">Hi, I'm Mohammed Rafeq</h3>
+            <p class="about__description">
+              Aspiring web developer born in 1999, blending a solid
+              understanding of web technologies and UI/UX design with a passion
+              for learning and growth through hands-on experience in a
+              professional setting.
+            </p>
+            <div class="about__info grid">
+              <div class="about__box">
+                <i class="uil uil-award about__icon"></i>
+                <h3 class="about__title">Experience</h3>
+                <span class="about__subtitle">3rd-Year Student</span>
+              </div>
+
+              <div class="about__box">
+                <i class="uil uil-suitcase-alt about__icon"></i>
+                <h3 class="about__title">Completed</h3>
+                <span class="about__subtitle">48 + Projects </span>
+              </div>
+
+              <div class="about__box">
+                <i class="uil uil-headphones-alt about__icon"></i>
+                <h3 class="about__title">Availabe</h3>
+                <span class="about__subtitle">Full-Time Internship</span>
+              </div>
+            </div>
+            <a href="#contact" class="button"
+              ><i class="uil uil-navigator button__icon"></i>
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--===== Qualification =====-->
+      <section class="qualification section">
+        <h2 data-heading="My Journey" class="section__title">Qualification</h2>
+
+        <div class="qualification__container container grid">
+          <div class="experience">
+            <h3 class="qualification__title">
+              <i class="uil uil-suitcase"></i> Experience
+            </h3>
+
+            <div class="timeline">
+              <div class="timeline__item">
+                <div class="circle__dot"></div>
+                <h3 class="timeline__title">Freelancer</h3>
+                <p class="timeline__text">
+                  various tasks depending on job type, such as financing,
+                  customer service and labor-oriented tasks
+                </p>
+                <span class="timeline__date"
+                  ><i class="uil uil-calendar-alt"></i>
+                  2022 - Present
+                </span>
+              </div>
+
+              <div class="timeline__item">
+                <div class="circle__dot"></div>
+                <h3 class="timeline__title">Marketing and customer service</h3>
+                <p class="timeline__text">
+                  Social campagining and Telemarketing in new markets, mainly
+                  the Middle East.
+                </p>
+                <span class="timeline__date"
+                  ><i class="uil uil-calendar-alt"></i>
+                  2018 - 2019
+                </span>
+              </div>
+
+              <div class="timeline__item">
+                <div class="circle__dot"></div>
+                <h3 class="timeline__title">Junior Manager</h3>
+                <p class="timeline__text">
+                  contacting national and international customers, negotiating
+                  agreements, setting up orders and logistics, and ensuring
+                  daily management runs smoothly
+                </p>
+                <span class="timeline__date"
+                  ><i class="uil uil-calendar-alt"></i>
+                  2015 - 2017
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="education">
+            <h3 class="qualification__title">
+              <i class="uil uil-graduation-cap"></i> Education
+            </h3>
+
+            <div class="timeline">
+              <div class="timeline__item">
+                <div class="circle__dot"></div>
+                <h3 class="timeline__title">
+                  Fontys University of Applied Sciences, Eindhoven
+                </h3>
+                <p class="timeline__text">ICT In Media Design</p>
+                <span class="timeline__date"
+                  ><i class="uil uil-calendar-alt"></i>
+                  2022 - Present
+                </span>
+              </div>
+
+              <div class="timeline__item">
+                <div class="circle__dot"></div>
+                <h3 class="timeline__title">Tilburg Universiteit, Tilburg</h3>
+                <p class="timeline__text">Pre-Bachelor</p>
+                <span class="timeline__date"
+                  ><i class="uil uil-calendar-alt"></i>
+                  2020 - 2021
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== Skills =====-->
+      <section class="services section" id="services">
+        <h2 data-heading="Services" class="section__title">What I Offer</h2>
+
+        <div class="services__container container grid">
+          <div class="services__content">
+            <div>
+              <i class="uil uil-web-grid services__icon"></i>
+              <h3 class="services__title">
+                Web & Mobile <br />
+                Development
+              </h3>
+            </div>
+
+            <span class="services__button">
+              View More
+              <i class="uil uil-arrow-right services__button-icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="uil uil-times services__modal-close"></i>
+
+                <h3 class="services__modal-title">
+                  Web and Mobile Development
+                </h3>
+                <p class="services__modal-description">
+                  Strong foundation in web technologies (HTML, CSS, JavaScript)
+                  and smart-mobile development, with hands-on experience in
+                  creating responsive websites and mobile-friendly applications.
+                </p>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I develop user interfaces for both web and mobile
+                      platforms.
+                    </p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I build responsive websites and adaptive mobile
+                      applications.
+                    </p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I create seamless UX interactions for cross-platform
+                      consistency.
+                    </p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I enhance your brand presence across web and mobile
+                      experiences.
+                    </p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I design and implement digital solutions tailored for both
+                      desktop and smart devices.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="services__content">
+            <div>
+              <i class="uil uil-arrow services__icon"></i>
+              <h3 class="services__title">
+                UI/UX <br />
+                Designer
+              </h3>
+            </div>
+
+            <span class="services__button">
+              View More
+              <i class="uil uil-arrow-right services__button-icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="uil uil-times services__modal-close"></i>
+
+                <h3 class="services__modal-title">UI/UX Designer</h3>
+                <p class="services__modal-description">
+                  Knowledge of user interface and user experience design
+                  principles, including wireframing, prototyping, and creating
+                  intuitive, visually appealing designs.
+                </p>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I design user-friendly interfaces.
+                    </p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I craft aesthetically pleasing and intuitive designs.
+                    </p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I create interactive prototypes.
+                    </p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I develop wireframes to structure content.
+                    </p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I enhance the usability of digital products.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="services__content">
+            <div>
+              <i class="uil uil-edit services__icon"></i>
+              <h3 class="services__title">
+                Digital Experience <br />
+                Design
+              </h3>
+            </div>
+
+            <span class="services__button">
+              View More
+              <i class="uil uil-arrow-right services__button-icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="uil uil-times services__modal-close"></i>
+
+                <h3 class="services__modal-title">
+                  Digital Experience Strategy
+                </h3>
+                <p class="services__modal-description">
+                  Gaining expertise in digital experience design, with a focus
+                  on creating seamless, engaging experiences across different
+                  platforms, and a passion for staying up-to-date with emerging
+                  technologies and trends.
+                </p>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I strategize seamless user experiences.
+                    </p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I develop innovative solutions for digital trends.
+                    </p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I design multi-platform digital interactions.
+                    </p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I incorporate emerging technologies into designs.
+                    </p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      I focus on user engagement and retention.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Popup -->
+      <div class="portfolio__popup">
+        <div class="portfolio__popup-inner">
+          <div class="portfolio__popup-content grid">
+            <span class="portfolio__popup-close"
+              ><i class="uil uil-times"></i
+            ></span>
+            <div class="pp__thumbnail">
+              <img
+                src="assets/img/work-2.webp"
+                alt=""
+                class="portfolio__popup-img"
+              />
+            </div>
+            <div class="portfolio__popup-info">
+              <div class="portfolio__popup-subtitle">
+                Featured - <span>Design</span>
+              </div>
+              <div class="portfolio__popup-body">
+                <h3 class="details__title">App for tecnology & services</h3>
+                <p class="details__description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Earum impedit voluptatibus minima.
+                </p>
+                <ul class="details__info">
+                  <li>Created - <span>4 dec 2020</span></li>
+                  <li>Skills - <span>html css</span></li>
+                  <li>Role - <span>front-end</span></li>
+                  <li>
+                    View - <span><a href="#">www.domain.com</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--===== Services =====-->
+
+      <section class="skills section" id="skills">
+        <h2 data-heading="My Abilities" class="section__title">
+          My Experience
+        </h2>
+
+        <div class="skills__container container grid">
+          <div class="skills__tabs">
+            <div class="skills__header skills__active" data-target="#frontend">
+              <i class="uil uil-brackets-curly skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Front-end developer</h1>
+                <span class="skills__subtitle"> 3 years </span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__header" data-target="#design">
+              <i class="uil uil-swatchbook skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">UI / UX design</h1>
+                <span class="skills__subtitle">3 Years</span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__header" data-target="#backend">
+              <i class="uil uil-server-network skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">App Developer</h1>
+                <span class="skills__subtitle">3 Years</span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+          </div>
+
+          <div class="skills__content">
+            <div
+              class="skills__group skills__active"
+              data-content
+              id="frontend"
+            >
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+
+                  <div class="skills__bar">
+                    <span class="skills__percentage" style="width: 90%"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+
+                  <div class="skills__bar">
+                    <span class="skills__percentage" style="width: 90%"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">JavaScript</h3>
+                    <span class="skills__number">60%</span>
+                  </div>
+
+                  <div class="skills__bar">
+                    <span class="skills__percentage" style="width: 60%"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Three.js</h3>
+                    <span class="skills__number">40%</span>
+                  </div>
+
+                  <div class="skills__bar">
+                    <span class="skills__percentage" style="width: 40%"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills__group" data-content id="design">
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Figma</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+
+                  <div class="skills__bar">
+                    <span class="skills__percentage" style="width: 90%"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Sketch</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+
+                  <div class="skills__bar">
+                    <span class="skills__percentage" style="width: 90%"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Adbobe Suit</h3>
+                    <span class="skills__number">50%</span>
+                  </div>
+
+                  <div class="skills__bar">
+                    <span class="skills__percentage" style="width: 50%"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Blender</h3>
+                    <span class="skills__number">50%</span>
+                  </div>
+
+                  <div class="skills__bar">
+                    <span class="skills__percentage" style="width: 50%"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills__group" data-content id="backend">
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Kotlin</h3>
+                    <span class="skills__number">60%</span>
+                  </div>
+
+                  <div class="skills__bar">
+                    <span class="skills__percentage" style="width: 60%"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Flutter</h3>
+                    <span class="skills__number">50%</span>
+                  </div>
+
+                  <div class="skills__bar">
+                    <span class="skills__percentage" style="width: 50%"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Firebase</h3>
+                    <span class="skills__number">40%</span>
+                  </div>
+
+                  <div class="skills__bar">
+                    <span class="skills__percentage" style="width: 40%"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--===== Contact =====-->
+      <section class="contact section" id="contact">
+        <h2 data-heading="Get in touch" class="section__title">Contact Me</h2>
+
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <div class="contact__info">
+              <div class="contact__card">
+                <i class="uil uil-envelope-edit contact__card-icon"></i>
+                <h3 class="contact__card-title">Email</h3>
+                <span class="contact__card-data"
+                  >r.rafeq@student.fontys.nl</span
+                >
+                <a
+                  href="mailto:r.rafeq@student.fontys.nl"
+                  class="contact__button"
+                >
+                  Send me
+                  <i class="uil uil-arrow-right contact__button-icon"></i>
+                </a>
+              </div>
+
+              <div class="contact__card">
+                <i class="uil uil-whatsapp contact__card-icon"></i>
+                <h3 class="contact__card-title">Whatsapp</h3>
+                <span class="contact__card-data">+31-68-7562-519</span>
+                <a
+                  href="https://api.whatsapp.com/send?phone=0687562519&text=Hello, more information!"
+                  class="contact__button"
+                >
+                  Chat with me
+                  <i class="uil uil-arrow-right contact__button-icon"></i>
+                </a>
+              </div>
+
+              <div class="contact__card">
+                <i class="uil uil-phone info__icon contact__card-icon"></i>
+                <h3 class="contact__card-title">Phone Number</h3>
+                <span class="contact__card-data">+31-68-7562-519</span>
+                <a href="#" class="contact__button">
+                  Call me
+                  <i class="uil uil-arrow-right contact__button-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <form action="" class="contact__form">
+              <div class="input__container">
+                <input type="text" class="input" />
+                <label for="">Username</label>
+                <span>Username</span>
+              </div>
+              <div class="input__container">
+                <input type="email" class="input" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input__container">
+                <input type="tel" class="input" />
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+              <div class="input__container textarea">
+                <textarea name="" id="" class="input"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+              <button type="submit" class="button">
+                <i class="uil uil-navigator button__icon"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--========== FOOTER ==========-->
+      <footer class="footer">
+        <div class="footer__bg">
+          <div class="footer__container container grid">
+            <div>
+              <h1 class="footer__title">Mohammed</h1>
+              <span class="footer__subtitle">Front-end developer</span>
+            </div>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#services" class="footer__link">Services</a>
+              </li>
+              <li>
+                <a href="#work" class="footer__link">Work</a>
+              </li>
+              <li>
+                <a href="#contact" class="footer__link">Contact</a>
+              </li>
+            </ul>
+
+            <div class="footer__socials">
+              <a
+                href="https://www.gitlab.com/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="uil uil-gitlab"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="uil uil-instagram"></i>
+              </a>
+              <a
+                href="https://linklinkedin.com/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="uil uil-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <p class="footer__copy">&#169;Mohammed_Rafeq. All right reserved</p>
+        </div>
+      </footer>
+    </main>
+
+    <!--========== SCROLL UP ==========-->
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+    <!--========== MIXITUP FILTER ==========-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--========== SWIPER JS ==========-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+  </body>
+</html>
